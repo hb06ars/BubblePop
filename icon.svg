@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#702b72"/>
+      <stop offset="1" stop-color="#210e2d"/>
+    </linearGradient>
+    <linearGradient id="bubble" x1="0" y1="0" x2="0.8" y2="1">
+      <stop stop-color="#ffc1e3"/>
+      <stop offset="1" stop-color="#ff76ba"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="12" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#background)"/>
+  <circle cx="256" cy="256" r="158" fill="#ff83c5" opacity=".18" filter="url(#glow)"/>
+  <g fill="url(#bubble)" stroke="#fff4fb" stroke-opacity=".55" stroke-width="8">
+    <circle cx="190" cy="219" r="67"/>
+    <circle cx="318" cy="219" r="67"/>
+    <circle cx="256" cy="329" r="67"/>
+  </g>
+  <g fill="#fff4fb" opacity=".8">
+    <ellipse cx="169" cy="194" rx="17" ry="10" transform="rotate(-35 169 194)"/>
+    <ellipse cx="297" cy="194" rx="17" ry="10" transform="rotate(-35 297 194)"/>
+    <ellipse cx="235" cy="304" rx="17" ry="10" transform="rotate(-35 235 304)"/>
+  </g>
+</svg>

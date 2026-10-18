@@ -1,0 +1,20 @@
+{
+  "id": "./",
+  "name": "Bubble Pop — Offline",
+  "short_name": "Bubble Pop",
+  "description": "Combine bolhas coloridas e bata seu recorde neste jogo offline.",
+  "lang": "pt-BR",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#210e2d",
+  "theme_color": "#3b174a",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
